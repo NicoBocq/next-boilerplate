@@ -1,4 +1,4 @@
-Simplet [Next.js](https://nextjs.org) boilerplate.
+Simple [Next.js](https://nextjs.org) boilerplate.
 
 ## Getting Started
 
