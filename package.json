@@ -10,7 +10,8 @@
     "lint-staged": "lint-staged",
     "prepare": "husky",
     "prettier": "prettier --write --ignore-unknown .",
-    "prettier:check": "prettier --check --ignore-unknown ."
+    "prettier:check": "prettier --check --ignore-unknown .",
+    "ui": "pnpm dlx shadcn@latest add"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
