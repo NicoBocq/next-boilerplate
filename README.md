@@ -11,18 +11,19 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
 ## Dependencies
 
-- Shadcn
+- UI: Shadcn
 - Prettier
-- Husky
+- Pre-commit: Husky
+- Validation: Zod
+- Search Params: Nuqs
+- Safe actions: Next-Safe-Actions
+- Env: t3-oss/env-nextjs
+- Test: Vitest
 
 ## Custom components
 
-- icon (Lucide),
+- icon with Lucide icons,
 - customLink (styled with buttonVariants from Shadcn),
 - customFormSubmit (loading implemented and styled with buttonVariants from Shadcn), 
