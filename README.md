@@ -13,14 +13,14 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## Dependencies
 
-- UI: Shadcn
-- Prettier
-- Pre-commit: Husky
-- Validation: Zod
-- Search Params: Nuqs
-- Safe actions: Next-Safe-Actions
-- Env: t3-oss/env-nextjs
-- Test: Vitest
+- UI: [Shadcn](https://ui.shadcn.com/)
+- Prettier: [Prettier](https://prettier.io/)
+- Pre-commit: [Husky](https://typicode.github.io/husky/)
+- Validation: [Zod](https://zod.dev/)
+- Search Params: [Nuqs](https://nuqs.dev/)
+- Safe actions: [Next-Safe-Action](https://next-safe-action.dev/)
+- Env: [t3-oss/env-nextjs](https://env.t3.gg/)
+- Test: [Vitest](https://vitest.dev/)
 
 ## Custom components
 
