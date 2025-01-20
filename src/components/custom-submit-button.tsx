@@ -5,22 +5,25 @@ import { useFormStatus } from 'react-dom'
 
 import { cn } from '@/lib/utils'
 
-import { Button, ButtonProps } from '../ui/button'
+import { Button, ButtonProps } from './ui/button'
 import Icon, { type IconProps } from './icon'
 
 interface FormSubmitProps extends ButtonProps {
   label?: string
   loading?: boolean
   icon?: IconProps['name']
+  ref?: React.Ref<HTMLButtonElement>
 }
 
-export default function CustomSubmitButton({
+export default function CustomButton({
   label,
   id,
   disabled,
   icon,
   loading,
   className,
+  type = 'button',
+  ref,
   ...props
 }: FormSubmitProps) {
   const { pending } = useFormStatus()
@@ -29,11 +32,12 @@ export default function CustomSubmitButton({
 
   return (
     <Button
-      disabled={disabled || isLoading}
       {...props}
+      ref={ref}
+      disabled={disabled || isLoading}
       id={id}
       className={cn('relative gap-2', className)}
-      type="submit"
+      type={type}
       size={!label ? 'icon' : props.size}
     >
       {icon && (
