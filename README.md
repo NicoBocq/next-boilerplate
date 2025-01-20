@@ -26,4 +26,4 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 - icon with Lucide icons,
 - customLink (styled with buttonVariants from Shadcn),
-- customFormSubmit (loading implemented and styled with buttonVariants from Shadcn), 
+- customFormSubmit (loading implemented and styled with buttonVariants from Shadcn),

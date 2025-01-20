@@ -1,4 +1,4 @@
-const path = require('path')
+import path from 'path'
 
 const buildEslintCommand = (filenames) =>
   `next lint --fix --file ${filenames
@@ -8,6 +8,8 @@ const buildEslintCommand = (filenames) =>
 const buildPrettierCommand = (filenames) =>
   `prettier --write ${filenames.join(' ')}`
 
-module.exports = {
+const lintStagedConfig = {
   '*.{js,jsx,ts,tsx}': [buildEslintCommand, buildPrettierCommand],
 }
+
+export default lintStagedConfig

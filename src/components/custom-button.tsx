@@ -5,8 +5,8 @@ import { useFormStatus } from 'react-dom'
 
 import { cn } from '@/lib/utils'
 
-import { Button, ButtonProps } from './ui/button'
 import Icon, { type IconProps } from './icon'
+import { Button, ButtonProps } from './ui/button'
 
 interface CustomButtonProps extends ButtonProps {
   label?: string

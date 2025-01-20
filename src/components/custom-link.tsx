@@ -3,8 +3,8 @@ import Link, { LinkProps } from 'next/link'
 
 import { cn } from '@/lib/utils'
 
-import { ButtonProps, buttonVariants } from './ui/button'
 import Icon, { IconProps } from './icon'
+import { ButtonProps, buttonVariants } from './ui/button'
 
 interface LinkCustomProps extends LinkProps, HTMLAttributes<HTMLAnchorElement> {
   children?: React.ReactNode
@@ -19,8 +19,16 @@ interface LinkCustomProps extends LinkProps, HTMLAttributes<HTMLAnchorElement> {
 }
 
 export default function CustomLink(props: LinkCustomProps) {
-  const { icon, noVariant, target, className, children, iconRight, ref, ...rest } =
-    props
+  const {
+    icon,
+    noVariant,
+    target,
+    className,
+    children,
+    iconRight,
+    ref,
+    ...rest
+  } = props
   const size = props.size ? props.size : !children ? 'icon' : 'default'
   return (
     <Link
