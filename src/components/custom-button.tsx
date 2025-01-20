@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils'
 import { Button, ButtonProps } from './ui/button'
 import Icon, { type IconProps } from './icon'
 
-interface FormSubmitProps extends ButtonProps {
+interface CustomButtonProps extends ButtonProps {
   label?: string
   loading?: boolean
   icon?: IconProps['name']
@@ -25,7 +25,7 @@ export default function CustomButton({
   type = 'button',
   ref,
   ...props
-}: FormSubmitProps) {
+}: CustomButtonProps) {
   const { pending } = useFormStatus()
 
   const isLoading = loading || pending
